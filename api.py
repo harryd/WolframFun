@@ -7,10 +7,11 @@ __author__ = 'me@tomdignan.com'
 __version__ = '0.1-dev'
 
 server = 'http://api.wolframalpha.com/v1/query.jsp'
-appid = 'ADD YOUR APPID'
+appid = open('appid').readline()[0:-1]
+print 'using app id: "%s"' % appid
 
 if len(sys.argv) > 1:
-	input = sys.argv[1]	
+	input = ' '.join(sys.argv[1:])
 else:	
 	input = 'who are you?'
 
