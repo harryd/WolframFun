@@ -7,7 +7,7 @@ __author__ = 'me@tomdignan.com'
 __version__ = '0.1-dev'
 
 server = 'http://api.wolframalpha.com/v1/query.jsp'
-appid = 'UVJ83G-UPGETLYK86'
+appid = 'ADD YOUR APPID'
 
 if len(sys.argv) > 1:
 	input = sys.argv[1]	
